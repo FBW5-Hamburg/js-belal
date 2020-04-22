@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+   background-color: DeepSkyBlue;
+    display: flex;
+}
+
+.h3{
+width: 24%;
+ left: 0%;
+ top: 0px;
+ opacity: 0;
+ transition: 1s;
+ z-index: 20;
+}
+
+#left{
+    width: 30%;
+    height: 100vh;
+    background-color:Silver;
+    position: relative;
+    top: 100vh;
+    z-index: -1;
+   transition: 1s;
+}
+#mitte{
+    width: 40%;
+    height: 100vh;
+    background-color:Silver;
+    position: relative;
+    transform-origin: left;
+    transform: rotateX(180deg);
+    z-index: -1;
+  transition: 1s;
+}
+#right{
+    width: 30%;
+    height: 100vh;
+    background-color:Silver;
+    position: relative;
+    bottom: 100vh;
+    z-index: -1;
+  transition: 1s;
+}
+.img1{
+  
+    position: absolute;
+    width: 45%;
+    height: 70vh;
+    left: 40%;
+   bottom: 100%;
+display: none;
+    opacity: 1;
+    transition: 1s;
+   
+    transform: scale(1);
+z-index: -1;
+  
+}
+.f ,.f1,.f2,.f3,.f2,.f5,.f6 {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    box-shadow:5px 4px 8px 5px rgba(20, 2, 2, 0.349);
+    transform-origin: 100px 100px;
+                 perspective: 800px;
+  perspective-origin: 90% 90%;
+
+}
+#div1 .img1 .f1:nth-child(3){
+    background-image: url(/imeg/park1.jpg);
+    left: 100px; 
+     top: 180px; 
+}
+#div1 .img1 .f1:nth-child(2){
+    background-image: url(/imeg/park2.jpg);
+     left: 5px;
+   top: 30px;
+ }
+ #div1 .img1 .f1:nth-child(1){
+    background-image: url(/imeg/park3.jpg);
+    left: 360px;
+    top: 90px;
+}
+.img1 .f:hover,.f1:hover,.f2:hover,.f3:hover,.f4:hover,.f5:hover,.f6:hover{
+    z-index: 3;
+    left: 80px;
+    top: 0px;
+    outline: solid rgb(250, 250, 253) 5px ;
+    background-size: cover;
+   background-position: center;
+      width: 600px;
+      height: 350px;
+           position: relative;   
+        
+        
+       transform: translatez( 80px);
+        transition: all 0.5s;
+      
+        transform-origin: 100px 100px; 
+}
+
+#div2 .img1 .f2:nth-child(3){
+    background-image: url(/imeg/r4.jpg);
+    left: 100px; 
+     top: 180px
+}
+#div2  .img1 .f2:nth-child(2){
+    background-image: url(/imeg/r3.jpg);
+    left: 5px;
+    top: 30px;
+ }
+ #div2  .img1 .f2:nth-child(1){
+    background-image: url(/imeg/r2.jpg);
+    left: 360px;
+    top: 90px;
+}
+
+
+.imge{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+   
+    top: 80%;
+    background-color:Silver;
+  
+   
+   
+    transition: 2s;
+}
+.imge >div{
+    width: 220px;
+    height: 150px;
+    margin: 15px 5px;
+
+    flex-grow: 1;
+    border: 2px solid rgb(231, 231, 235);
+}
+#div1{
+    background-image: url(/imeg/img2.jpg);
+    background-size: cover;
+}
+#div2{
+    background-image: url(/imeg/img5.jpg);
+    background-size: cover;
+}
+#div3{
+    background-image: url(/imeg/img7.jpg);
+    background-size: cover;
+}
+#div4{
+    background-image: url(/imeg/img8.jpg);
+    background-size: cover;
+}
+#div5{
+    background-image: url(/imeg/img3.jpg);
+    background-size: cover;
+}
+#div6{
+    background-image: url(/imeg/img6.jpg);
+    background-size: cover;
+}
