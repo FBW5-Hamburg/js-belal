@@ -28,7 +28,7 @@
     display: grid;
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
     margin: 10px;
-    background: url(/imeg/Rathaus5.jpg) no-repeat center/cover; 
+    background: url(../imeg/Rathaus5.jpg) no-repeat center/cover; 
     /* background: linear-gradient(-45deg, #ee7652b4, #e73c7ea2, #23a5d5a6, #23d5ab2f); */
 	background-size: 100% 100%;
 	animation: gradient 15s ease infinite;

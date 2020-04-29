@@ -149,18 +149,18 @@ width: 55px;
       
   }
   #slid1{
-      background-image: url(/imeg/img4.jpg);
+      background-image: url(../imeg/img4.jpg);
     
     
   }
   #slid2{
-      background-image: url(/imeg/hafen7.jpg);
+      background-image: url(../imeg/hafen7.jpg);
   }
   #slid3{
-      background-image: url(/imeg/hafen6.jpg);
+      background-image: url(../imeg/hafen6.jpg);
   }
   #slid4{
-      background-image: url(/imeg/alster2.jpg);
+      background-image: url(../imeg/alster2.jpg);
   }
   .cont{
       width: 80%;
@@ -597,32 +597,32 @@ position: relative;
    
   }
   .imgSlid1{
-    background: url(/imeg/Planten\ un\ Blomen4.jpg);
+    background: url(../imeg/Planten\ un\ Blomen4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .imgSlid2{
-    background: url(/imeg/Planten\ un\ Blomen2.jpg) ;
+    background: url(../imeg/Planten\ un\ Blomen2.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .imgSlid3{
-    background: url(/imeg/Planten\ un\ Blomen3.jpg) ;
+    background: url(../imeg/Planten\ un\ Blomen3.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
   }
   .imgSlid4{
-    background: url(/imeg/Planten\ un\ Blomen5.jpg) ;
+    background: url(../imeg/Planten\ un\ Blomen5.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
   .imgSlid5{
-    background: url(/imeg/Planten\ un\ Blomen1.jpg) ;
+    background: url(../imeg/Planten\ un\ Blomen1.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
