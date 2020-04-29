@@ -1061,8 +1061,9 @@ nav{
              }
              
             #rotating{
-             bottom: 120px;
-              position: relative;
+             bottom: 220px;
+              position: absolute;
+             left: 20%;
             }
             .flip{
             

@@ -6,7 +6,7 @@ window.onload = function(){
 let arr =''
 function getData(arr){
     cat1 =arr
-    fetch("https://newsapi.org/v2/everything?q=hamburg&sources?&apiKey=901399a7a26d409b9e62a188e0d974ab", {
+    fetch("https://newsapi.org/v2/everything?q=hamburg&sources&apiKey=901399a7a26d409b9e62a188e0d974ab", {
     "method": "GET",
    
 })

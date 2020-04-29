@@ -5,7 +5,7 @@ window.onload = function(){
 
 function getData(arr){
     
-     fetch("http://newsapi.org/v2/top-headlines?country=de&category="+arr+"&apiKey=901399a7a26d409b9e62a188e0d974ab", {
+     fetch("https://newsapi.org/v2/top-headlines?country=de&category="+arr+"&apiKey=901399a7a26d409b9e62a188e0d974ab", {
  	"method": "GET",
 	
  })
