@@ -158,7 +158,7 @@ top: 20px;
 z-index: 10px;
 }
 /* &&&&&&&&&&&&&& */
-@media screen and (max-width:1200px){
+@media screen and (max-width:1000px){
   
   #res{
     width: 100%;
@@ -169,7 +169,7 @@ z-index: 10px;
     perspective: 800px; 
   }
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:768px){
   
   #res{
     width: 100%;
@@ -200,7 +200,7 @@ z-index: 10px;
 
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:500px){
   body{
     position: sticky;
     width: 100%;
