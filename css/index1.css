@@ -264,17 +264,7 @@ display: grid;
 
 } 
 
-/* .f  {
-   position: relative;
-    width: 400px;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    box-shadow:5px 4px 8px 5px rgba(20, 2, 2, 0.349);  
-    border-radius: 7px;
-    background-blend-mode:multiply ;
-    transition: all 0.5s;
-} */
+
 .hov{
    position: relative; 
   width: 480px;
@@ -293,7 +283,6 @@ display: grid;
   width: 580px;
   height: 350px; 
   position: absolute;   
-  /* transform: translateZ( 50px); */
   transition: all 0.7s;
   box-shadow: 15px 15px 5px rgba(39, 39, 39, 0.575);
 }
@@ -608,24 +597,35 @@ position: relative;
    
   }
   .imgSlid1{
-    background: url(/imeg/Planten\ un\ Blomen4.jpg) no-repeat center/cover;
-   
+    background: url(/imeg/Planten\ un\ Blomen4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .imgSlid2{
-    background: url(/imeg/Planten\ un\ Blomen2.jpg) no-repeat center/cover;
-    
+    background: url(/imeg/Planten\ un\ Blomen2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .imgSlid3{
-    background: url(/imeg/Planten\ un\ Blomen3.jpg) no-repeat center/cover;
+    background: url(/imeg/Planten\ un\ Blomen3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     
   }
   .imgSlid4{
-    background: url(/imeg/Planten\ un\ Blomen5.jpg) no-repeat center/cover;
-    
+    background: url(/imeg/Planten\ un\ Blomen5.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   .imgSlid5{
-    background: url(/imeg/Planten\ un\ Blomen1.jpg) no-repeat center/cover;
-    
+    background: url(/imeg/Planten\ un\ Blomen1.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   /* ////////%%%%%555555555////// */
@@ -799,15 +799,7 @@ z-index: 10px;
   position: absolute;
 }  
     }
-    @media only screen and (max-width:1725px){
-      #imeges{
-        display: grid;
-        
-        grid-template-rows: 600px 850px 600px 600px 600px 420px;
-       padding: 0;
-       
-    }
-    }
+   
 
 
 @media only screen and (max-width:1050px){
