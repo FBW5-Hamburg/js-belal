@@ -1,6 +1,6 @@
 window.onload = function(){
      navAbaut()
-//  let arr=['business','entertainment','health','science','sports','technology'];
+
 
 
 function getData(arr){
