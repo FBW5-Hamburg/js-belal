@@ -1,12 +1,13 @@
 window.onload=function () {
     right()
     setTimeout(mitte,500)
-    setTimeout(abutImg,1500)
+    setTimeout(abutImg,9000)
     setTimeout(nav1,2000)
-    setTimeout(sub1,2500)
-    setTimeout(form,2000)
-    setTimeout(name1,4000)
+    setTimeout(sub1,2000)
+    setTimeout(form,4000)
+    setTimeout(name1,8000)
     setTimeout(imgAb,8500)
+    setTimeout( computer,8500 )
     navAbaut()
 }
 function right() {
@@ -77,4 +78,9 @@ function imgAb() {
     imgab.style.transform= 'translateX(10%)';
     imgab.style.  bottom= '180px';
 
+}
+function computer() {
+    let comimg=document.querySelector('.comimg')
+    comimg.style.transform= 'scale(.8)';
+    comimg.style. opacity= '1';
 }

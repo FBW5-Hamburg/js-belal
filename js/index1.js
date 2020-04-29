@@ -448,3 +448,42 @@ function myMap() {
         })
     }
     navAbaut()
+    /////////marquee/////////
+    function getData(arr){
+    
+     fetch("http://newsapi.org/v2/top-headlines?country=de&apiKey=901399a7a26d409b9e62a188e0d974ab", {
+        "method": "GET",
+       
+    })
+   
+    .then(response => {
+       let data = response.json().then(d=>{
+            console.log(d)
+             let mar =document.querySelector('.mar')
+             let marText = '<marquee  direction="left" loop="true" onmouseover="this.stop();" onmouseout="this.start();">'
+            d.articles.map(item=>{
+                // console.log(item);
+                let title= document.createElement("li");    
+                let ul = document.createElement("ul")
+             let url= document.createElement("li");
+             let link ;
+             let marker;
+             /////
+             title.textContent=item.title
+             marker+=item.title 
+             link=item.url
+             marText+=`  <a class='mar' target="_blank" href="${link}"> ${item.title}</a>`+'&nbsp;'+'&nbsp;'+'&nbsp;'
+             url.innerHTML=`<a href='${link}' target="_blank" > homepage </a>`
+             ////
+             ul.appendChild(title ) 
+             ul.appendChild(url )
+        })
+        mar.innerHTML = marText + '</marquee>'
+   }) 
+    })
+    .catch(err => {
+        console.log(err);
+    });
+}
+getData('arr')
+   
