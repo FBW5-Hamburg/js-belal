@@ -1,0 +1,109 @@
+ .contNachrecht{
+     display: grid;
+     grid-template-columns: 40% 40%;
+     gap: 50px;
+     padding: 50px;
+     justify-content: center;
+ }
+ #res1{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    height:1000vh;
+    grid-gap: 50px;
+    perspective: 800px;
+  
+    padding: 20px;
+
+    
+} 
+#res1>ul{
+    display: grid;
+    background-color:rgba(6, 57, 88, 0.932);
+  color:white;
+    box-shadow: 7px 10px 5px rgba(6, 57, 88, 0.664),-5px -5px  rgba(3, 54, 85, 0.534);
+    height: 80vh;
+     list-style-type: none; 
+    padding: 20px;
+    font-size: 19px;
+    line-height: 25px;
+    transition: all 0.5s;
+}
+.mm{
+  width: 90%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+
+
+#nachrecht{
+    display: grid;
+    grid-template-columns: 1fr  ;
+    height: 600vh;
+    grid-gap: 50px;
+    perspective: 800px;
+  
+    padding: 20px;
+
+}
+#nachrecht>ul{
+  background-color:rgba(6, 57, 88, 0.932);
+  color:white;
+    box-shadow: 7px 10px 5px rgba(6, 57, 88, 0.664),-5px -5px  rgba(3, 54, 85, 0.534);
+    height: 80vh;
+     list-style-type: none; 
+    padding: 20px;
+    font-size: 19px;
+    line-height: 25px;
+    transition: all 0.5s;
+  
+}
+#nachrecht>ul:hover{
+    transform: scale(1.1);
+  transform: perspective(500);
+ 
+  background-blend-mode:multiply ;
+  transition: all 0.5s;
+}
+#nachrecht>ul>a{
+    text-decoration: none;
+  color: rgba(248, 2, 137, 0.993);
+}
+
+#burger{
+  width: 50px;
+  position: fixed;
+  right: 24px;
+  font-weight: bold;
+  top: 10px;
+ display: none;
+
+cursor: pointer;
+
+}
+#burger div{
+ 
+width: 25px ;
+height: 5px;
+background-color: papayawhip;
+margin: 5px;
+right: 10px;
+top: 20px;
+
+z-index: 10px;
+}
+
+/* &&&&&&&&&&& */
+
+@media only screen and (max-width:850px){
+.contNachrecht{
+  grid-template-columns:100%;
+}
+
+
+
+
+}

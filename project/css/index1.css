@@ -6,20 +6,22 @@
         font-family: 'Oswald',sans-serif;
 }
 #container{
-  
+  width: 100%;
     position: relative;
     background-image: linear-gradient(rgba(103, 129, 141, 0.274),rgba(130, 201, 214, 0.192)),url(/imeg/h2.jpg);
     /* background-attachment: fixed; */
     display: grid;
-    grid-template-rows: 625px auto ;
+    grid-template-rows: 615px auto ;
+    background-size: cover;
    background-repeat: no-repeat;
+   background-attachment: fixed;
 }
 #sliderCont{
     position: relative;
     display: grid;
     overflow: hidden;   
 }
-img{
+#img{
     position: absolute;
     right: 20px;
     top: 10px;
@@ -40,8 +42,15 @@ img{
       color: floralwhite;
       z-index: +1;
   }
+  .icon{
+    position: absolute;
+    right: 15px;
+    top: 30px;
+width: 55px;
+   
+  }
   #clock{
-      position: absolute;
+      position:fixed;
       margin: 20px 10px;
      z-index: 10;
   }
@@ -68,10 +77,11 @@ img{
   nav{
       width: 100%;
       height: 20px;
-      position: absolute;
+      z-index: 1;
+      position: fixed;
   }
   nav>ul{
-      background-color:#708090;
+    background-color:rgba(6, 57, 88, 0.918);
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -114,25 +124,24 @@ img{
   #slider{
 
       width: 400%;
-      height: 100vh;
+      height: 98%;
       display: flex;
       transition: .5s;
      margin-top: 64px;
   }
   .slid{
       width: 33.33%;
-      height: 100%;
+      height: 90%;
       display: flex;
       justify-content: center;
       align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      background-color: rgba(119, 117, 117, 0.5);
-      background-blend-mode:multiply ;
+   
       position: relative;
       transition: .5s;
-      box-shadow:15px 15px 15px rgba(20, 20, 20, 0.582);
+    
       border-radius: 10px;
       
   }
@@ -176,11 +185,19 @@ img{
       color: rgb(253, 250, 245);
       font-family: 'Oswald',sans-serif;
   }
+  .mar{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    height: 20px;
+    
+  }
   /* //////////// */
 #imeges{
     display: grid;
     
-    grid-template-rows: 300px 630px 400px 400px 400px 400px;
+    grid-template-rows: 350px 690px 450px 450px 450px 400px;
     grid-gap: 20px ;
     position: relative;
     overflow: hidden;
@@ -247,8 +264,8 @@ display: grid;
 } */
 .hov{
    position: relative; 
-  width: 400px;
-  height: 250px;
+  width: 480px;
+  height: 300px;
   background-size: cover;
   background-position: center;
   box-shadow:5px 4px 8px 5px rgba(20, 2, 2, 0.349);  
@@ -260,8 +277,8 @@ display: grid;
 .hov:hover{
   z-index: 3;
   border: solid rgba(188, 188, 226, 0.349) 2px ;
-  width: 500px;
-  height: 300px; 
+  width: 580px;
+  height: 350px; 
   position: absolute;   
   /* transform: translateZ( 50px); */
   transition: all 0.7s;
@@ -330,34 +347,37 @@ display: grid;
  }
 
  .som1{
-     
-    
+     display: grid;
+    top: 10px;
     background-position: center;
     background-size: cover;
     position: absolute;
     border-radius: 8px;;
  }
+ .imege1{
+   position: absolute;
+ }
 
- .somImg .som1:nth-child(1)>img{
+ .somImg .som1:nth-child(1)>.imege1{
     left: 7px;
     width: 210px;
     height: 130px;
     border-radius: 8px;
 
  }
- .somImg .som1:nth-child(2)>img{
+ .somImg .som1:nth-child(2)>.imege1{
    left: 230px;
    width: 210px;
    height: 130px;
    border-radius: 8px;
 }
-.somImg .som1:nth-child(3)>img{
+.somImg .som1:nth-child(3)>.imege1{
     left: 455px;
     width: 210px;
     height: 130px;
     border-radius: 8px;
 }
-.somImg .som1:nth-child(4)>img{
+.somImg .som1:nth-child(4)>.imege1{
   left: 680px;
   width: 210px;
   height: 130px;
@@ -393,7 +413,7 @@ display: grid;
     position: absolute;
 }  
  #im5{
-    left: 450px;
+    left: 650px;
     top: 300px;
     position: absolute;
 }  
@@ -440,52 +460,40 @@ background-color: #e4e7eb;
   
   
   }
-  
-  /* Hide the images by default */
   .mySlides ,.mySlides1 {
       width: 100%;
       height: 100%;
     display: none;
     position: absolute;
-  right: 22px;
+  padding: 20px;
   }
   .imeg{
       width: 90%;
       height: 90%;
       position: absolute;
   }
-  
-  /* Next & previous buttons */
   .prev, .next ,.prev1 ,.next1{
     cursor: pointer;
     position: absolute;
     top: 40%;
-   
-    background-color: rgba(46, 189, 3, 0.295);
+    background-color: rgba(32, 133, 2, 0.76);
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 22px;
     transition: 1s ease;
    border-radius: 50px;
-    /* user-select: none; */
   }
-  
-  /* Position the "next button" to the right */
   .next,.next1 {
-    right: 50px;
+    right: 85px;
     border-radius: 50px;
   }
   .prev,.prev1{
-    left: 30px;
+    left: 35px;
   }
-  
-  /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
-    background-color: rgba(39, 175, 5, 0.445);
+    background-color: rgba(39, 175, 5, 0.925);
   }
-  
-  /* Caption text */
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -495,8 +503,6 @@ background-color: #e4e7eb;
     width: 100%;
     text-align: center;
   }
-  
-  
   .dot, .dot1 {
     cursor: pointer;
     height: 15px;
@@ -507,7 +513,8 @@ background-color: #e4e7eb;
    text-align: center;
     transition: background-color 0.6s ease;
     position: relative;
-    top: 300px;
+    top: 400px;
+    padding: 10px;
     
   }
   
@@ -518,7 +525,7 @@ background-color: #e4e7eb;
     background-color: #717171;
   }
   .dot1{
-    top: 340px;
+    top: 400px;
   }
   /* Fading animation */
   .fade {
@@ -572,7 +579,7 @@ position: relative;
     width: 100%;
     height: 100%;
  
-    background-color: cornflowerblue;
+   
     overflow: hidden;
 position: relative;
   }
@@ -630,7 +637,7 @@ position: relative;
      width: 400px;
      justify-items: center;
     /* transition:15s linear infinite ; */
-      animation:rotate 20s linear infinite;   
+      animation:rotate 30s linear infinite;   
       /* -webkit-transition: all 0.8s linear; */
      transform-style: preserve-3d;
    left: 115px;
@@ -675,7 +682,7 @@ position: relative;
 
   .right{
     transform: rotateY(90deg) translateX(200px);
-     
+  
    transform-origin: right;
    padding: 0;
    margin: 0;
@@ -696,8 +703,283 @@ position: relative;
 }
 @keyframes rotate{
     from{ transform: rotateY(0);}
-    to{transform: rotateY(90deg);}
+    to{transform: rotateY(360deg);}
 }
 /* 55555%%%%% */
+#go{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 5px;
+  display: none;
+  cursor: pointer
+  
+}
+#burger{
+  width: 50px;
+  position: fixed;
+  right: 39px;
+  font-weight: bold;
+  top: 20px;
+ display: none;
 
+cursor: pointer;
+
+}
+#burger div{
+ 
+width: 25px ;
+height: 5px;
+background-color: papayawhip;
+margin: 5px;
+right: 20px;
+
+
+z-index: 10px;
+}
+
+/* &&&&&&&&&&&&&&&//////////////// */
+@media only screen and (max-width:1025px){
+  #imeges{
+    display: grid;
+    
+    grid-template-rows: 600px 850px 1000px 850px 650px 420px;
+   padding: 0;
+   
+}
+  #img1 {
+    
+    
+    display: flex;
+     flex-direction: column;
+       align-items: center;
+    perspective: 800px; 
+ overflow: hidden;
+ 
+ } 
+ .hov{
+  width: 46%;
+  height: 250px;
+ 
+  display: block;
+  margin: auto;
+}
+#im1{
+  right: 20px; 
+  top: 20px; 
+  position: absolute;
+}
+#im2{
+  left: 20px; 
+  top: 20px; 
+  position: absolute;
+}   
+#im3{
+  right: 20px;
+  top: 290px;
+  position: absolute;
+}  
+#im4{
+   left: 20px;
+  top: 290px;
+  position: absolute;
+}  
+#im5{
+  left: 300px;
+  top: 560px;
+  position: absolute;
+}  
+}
+
+
+
+@media only screen and (max-width:850px){
+
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav{
+  background-color:rgba(6, 57, 88, 0.932);
+  height: 80px;
+ 
+}
+     nav>ul{
+      width: 20%;
+        top: 1PX;
+     left: 100%;
+         height: 50vh;
+         position: relative;
+        
+         display: flex;
+         flex-direction: column;
+           align-items: center;
+           transition: .5s ease-in-out;   
+       display: none;
+      }   
+      nav>ul a{
+        padding: 20px;
+        position: relative;
+      }
+  
+   #burger{
+      z-index: 1; 
+      position: fixed;
+      display: block;
+   }
+        .navActive {
+          opacity: 1;
+           left: 80%;
+         position: absolute;
+         transition: .5s ease-in-out; 
+        
+         padding: 10px;
+       
+         z-index: 300;
+         display: block;
+         top: 80px;
+        
+        } 
+        #burger{
+          z-index: 1; 
+          position: fixed;
+          display: block;
+       }
+        #img{
+          position: absolute;
+          left: 50%;
+        }
+        #imeges{
+          display: grid;
+          
+          grid-template-rows: 600px 1400px 1000px 850px 650px 420px;
+         padding: 0;
+         
+      }
+      #txt{
+        display: grid;
+        grid-template-columns:100%;
+   
+    }
+    #sprech{
+      width: 90%;
+     height: 330px;
+     margin: 10px auto;
+     padding-right: 30px;
+     display: grid;
+     
+    }
+    #map{
+      display: grid;
+      width: 80%;
+      height: 200px;
+    
+    right: 20px;
+     position: relative;
+
+    
+    }
+    #img1 {
+  
+    
+     display: flex;
+      flex-direction: column;
+        align-items: center;
+     perspective: 800px; 
+  overflow: hidden;
+  
+  } 
+  #im1{
+    left: 0px; 
+    top: 20px; 
+    position: absolute;
+  }
+  #im2{
+    left: 0px; 
+    top: 290px; 
+    position: absolute;
+}   
+  #im3{
+    left: 00px;
+    top: 560px;
+    position: absolute;
+}  
+ #im4{
+     left: 00px;
+    top: 830px;
+    position: absolute;
+}  
+ #im5{
+    left: 0px;
+    top: 1100px;
+    position: absolute;
+}  
+    .hov{
+
+      width: 90%;
+      height: 250px;
+      display: block;
+      margin: auto;
+    }
+    
+      .hov:hover{
+        z-index: 1;
+       width: 90%;
+        height: 290px; 
+      }
+      #cont2{
+
+   
+        display: grid;
+          grid-template-columns: 100%;
+       grid-column-gap: 2px; 
+      
+      }
+      .slideshow-container,.slideshow-container1 {
+        width: 90%;
+        height: 300px;
+       
+      
+        
+      
+
+         }
+         #cont3{
+          display: grid;
+            grid-template-columns: 100%;
+         grid-column-gap: 2px;
+        
+        }
+        .slideshow-container,.slideshow-container1 {
+           height: 300px;
+          display: grid;
+          left: 10px;
+           
+           }
+           #cont4{
+            grid-template-columns: 100%;
+            display: grid;
+            margin: auto;
+          }
+          .sliderImg4 {
+            width: 90%;
+             height: 300px;
+            display: grid; 
+          
+            right: 20px;
+             }
+             
+            #rotating{
+             bottom: 120px;
+              position: relative;
+            }
+            .flip{
+            
+             margin: auto;
+              top:0px;
+              left: 100px;
+            }
+
+}
  

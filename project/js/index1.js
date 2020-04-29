@@ -5,9 +5,7 @@ window.addEventListener('load', () => {
     let city = 'germany'
     let state = 'hamburg'
     const proxy = "https://cors-anywhere.herokuapp.com/";
-    //  let api= `api.openweathermap.org/data/2.5/weather?q=hamburg&appid=${key}` 
-    // let api =`${proxy}https://api.darksky.net/forecast/0123456789abcdef9876543210fedcba/42.3601,-71.0589`;    
-    // const api =`https://api.openweathermap.org/data/2.5/weather?lat=53.529582&lon=9.987500&units=metric&appid=${key}`;
+   
     let url = 'https://api.openweathermap.org/data/2.5/weather?q=' + state + '&units=metric&APPID=d05af9477b0f46101352d52dfb650f46'
     fetch(url)
 
@@ -17,24 +15,35 @@ window.addEventListener('load', () => {
 
         })
         .then(data => {
-            // console.log(data);
-
-            const ff = data.main.temp;
+            console.log(data);
+            // http://openweathermap.org/img/wn/10d@2x.png
             // console.log(ff);
-            temp.innerText = data.main.temp + " ";
-            tre.innerHTML = '<img src="http://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png">';
+            temp.innerHTML = data.main.temp + "&#8451;";
+            tre.innerHTML = '<img class="icon" src="http://openweathermap.org/img/wn/' + data.weather[0].icon + '@2x.png">';
             // console.log(data.name);
 
         })
 
 })
-let container = document.querySelector('#container')
-window.addEventListener('scroll', function () {
-    let offset = window.pageYOffset;
+// let go =document.querySelector('#go')
+// window.onscroll=function(){
+// if (window.pageYOffset>=500) {
+//     go.style.display='block'
+// } else {
+//     go.style.display='none'
+// }
+// }
+// go.onclick=function(){
+//     window.scrollTo(0,0)
+// }
 
-    container.style.backgroundPositionY = offset * 0.7 + 'px'
+// let container = document.querySelector('#container')
+// window.addEventListener('scroll', function () {
+//     let offset = window.pageYOffset;
 
-})
+//     container.style.backgroundPositionY = offset * 0.7 + 'px'
+
+// })
 
 function clock() {
     let hour = document.querySelector('#hour')
@@ -95,7 +104,7 @@ function slid() {
 
     for (let i = 0; i < sli.length; i++) {
         sli[i].style.transform = 'scale(.6)'
-
+        
 
     }
 }
@@ -109,8 +118,9 @@ function slid1() {
 
     }
 }
+/////////
 let p = document.querySelector('.p')
-let txt = p.innerText
+const txt = p.innerText
 
 let str = 0
 
@@ -325,52 +335,7 @@ flip.onclick = function(){
 
 }
 ///// map   ////////////////
-//    var map;
-//       var service;
-//       var infowindow;
-//         var  marker
-//       function initMap() {
-//         var sydney = new google.maps.LatLng(53.551086, 9.993682);
 
-//         infowindow = new google.maps.InfoWindow();
-
-
-//         map = new google.maps.Map(
-//             document.getElementById('map'), {center: sydney, zoom: 12});
-
-//         var request = {
-//           query: 'Museum of Hamburg Art Germany',
-//           fields: ['name', 'geometry'],
-//         };
-
-//         service = new google.maps.places.PlacesService(map);
-
-//         service.findPlaceFromQuery(request, function(results, status) {
-//           if (status === google.maps.places.PlacesServiceStatus.OK) {
-//             for (var i = 0; i < results.length; i++) {
-//               createMarker(results[i]);
-//             }
-
-//             map.setCenter(results[0].geometry.location);
-//           }
-//         });
-//       }
-//       var marker =new google.maps.Marker({
-//         position:{lat:-33.867,lng: 151.195},
-//         title:'Admiralitätsstraße 4,20459 Hamburg',
-//         map:map,
-//     })
-//       function createMarker(place) {
-//         var marker = new google.maps.Marker({
-//           map: map,
-//           position: place.geometry.location
-//         });
-
-//         google.maps.event.addListener(marker, 'click', function() {
-//           infowindow.setContent(place.name);
-//           infowindow.open(map, this);
-//         });
-//       }
 
 var mapProp
 var marker
@@ -442,58 +407,44 @@ function myMap() {
     })
 
 }
-// var mapProp
-// var mark
-// var infowindow
-//  function mapMin() {
-//      var mapmin= {
-//        center:new google.maps.LatLng(53.543729,9.988516),
-//        zoom:12,
-//      };
 
-//      var map = new google.maps.Map(document.getElementById("mapNin"),mapmin,mark,infow);
-//      var mark =new google.maps.Marker({
-//          position:{lat:53.543729,lng:9.988516},
-//          title:'Miniatur Wunderland',
-//          map:map,
-//      });
-//      var infow =new google.maps.InfoWindow({
-//          content:'<h3> hello</h3>'
-//      });
-//      mark.addListener('click',function (){
-//          infow.open(map,mark)
-//      });
-//      }
                 //////slidImg5//////////////////
-      const slidImg4 =document.querySelectorAll('.sliderImg4') 
-      slidImg4.forEach(element => {
+       const slidImg4 =document.querySelectorAll('.sliderImg4') 
+       slidImg4.forEach(element => {
           
-        Array.from(element.children).forEach((f2, index) => {
-            // console.log(f2)
+         Array.from(element.children).forEach((f2, index) => {
+             // console.log(f2)
             f2.addEventListener('click',em =>{
                 // console.log(index);
                 f2.style.transition = "2s"
-                 if (f2 === em.target){
-                     f2.style.transform = "scale(0)"
+                  if (f2 === em.target){
+                      f2.style.transform = "scale(0)"
                     
-                  }
-                  if (f2 !== em.target) {
+                   }
+                   if (f2 !== em.target) {
                       return f2
                   }
                if(index === 0){
-                    console.log("Last")
-                    // element.children[2].style.transform = ""
+                     console.log("Last")
+                     // element.children[2].style.transform = ""
                     Array.from(element.children).forEach(t=>{
                         t.style.transform = ""
                         
                     })
                 }
-                
-                   
-                
-                
-             
+                  
             })
 
-        })  
-     });
+     })  
+      });
+      ////////////////////nbav/////////////
+     function navAbaut() {
+        let burger=document.querySelector('#burger')
+        let navAbaut =document.querySelector('nav>ul')
+        burger.addEventListener('click',function () {
+            
+             navAbaut.classList.toggle('navActive')
+            
+        })
+    }
+    navAbaut()

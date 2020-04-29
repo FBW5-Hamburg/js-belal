@@ -4,18 +4,45 @@
 
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/hospitals.css">
+    <link rel="stylesheet" href="./css/index1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospitals in Hamburg</title>
 </head>
 <body>
 <div class="contJson">
      <div class="imgJson">
+        <div id="clock">
+            <span id="hour">H</span>
+            <span id="minutes">M</span>
+            <span id="secondes">S</span>
+            <span id="am">AM</span>
+        </div>
+        <nav>
+            <div id="tenperatur">
+                <div class="icon"></div>
+            </div>
+            <div class="temp"></div>
+            <ul>
 
-     </div>
-     <div id="output">
+                <li><a href="#">Toerisme</a></li>
+                <li><a href="hospitals.html">Hospitals</a></li>
+                <li><a href="news.html">News</a></li> 
+                <!-- <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>  -->
 
-     </div>
-    
+            </ul>
+            <img id="img" src="/imeg/h.svg" alt="">
+        </nav>
+    </div>
+    <!-- ////        //////// -->
+    <div class="contHaus">
+            <div id="output">
+                <h2 class="h2">Die Namen und Adressen der Krankenhäuser in Hamburg</h2>
+            </div>
+            <div id="nachrecht">
+                <h2 class="h2">Gesundheitsnachrichten in Hamburg</h2>
+            </div>
+    </div>
 </div>
 
     <script src="./js/hospitals.js">
