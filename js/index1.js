@@ -196,51 +196,13 @@ section.forEach(element => {
 
             })
         }, false)
-        // console.log(f.parentElement.offsetHeight - f.offsetTop)
-    //     if (locationImage.y > f.parentElement.offsetHeight - f.offsetTop) {
-    //        increasement.y = -increasement.y
-    //      }
-
-    //      locationImage.x = increasement.x+locationImage.prevImage.x
-    //      locationImage.y = increasement.y + locationImage.prevImage.y
-    //      locationImage.prevImage.x=locationImage.x
-    //      locationImage.prevImage.y = locationImage.y
+        
         
      })
 });
 /////////////////////////////////////////////////////////////////////////////////////////
 
-// Array.from(im1).forEach(el => {
-//     // let model = el.childElements[1]
-//     console.log(el)
-//     el.addEventListener('click', function () {
-//         model.style.display = 'block'
-//         model.style.transform = "scale(1)";
-//         txt1.innerText = this.alt
-//     })
-//     close.onclick = function () {
 
-//         model.style.transform = "scale(0)";
-//     }
-//     document.onkeydown = function (e) {
-//         if (e.keyCode = 27) {
-//             model.style.transform = "scale(0)";
-//         }
-//     }
-// });
-// let som1 = document.querySelectorAll('.som1 >img')
-// let img = document.querySelector('.img')
-
-// som1.forEach(el => {
-
-//     el.onmouseover = function () {
-
-
-//         img.src = el.src
-
-//     }
-
-// });
 
 /////%%%%%%%%////////
 var slideIndex = 1;
@@ -325,13 +287,6 @@ flip.onclick = function(){
         flip.style.animation = `rotate 2s linear`
         flip.style.transition="all 2s linear"
     }
-    
-    // if (trn.length > 0) {
-    //     flip.classList.remove('tran')
-    // }else{
-    //     flip.classList.add('tran')
-    // }
-
 
 }
 ///// map   ////////////////

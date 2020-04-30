@@ -207,7 +207,7 @@ width: 55px;
 #imeges{
     display: grid;
     
-    grid-template-rows: 350px 690px 450px 450px 450px 400px;
+    grid-template-rows: 450px 690px 450px 450px 450px 400px;
     grid-gap: 20px ;
     position: relative;
     overflow: hidden;
