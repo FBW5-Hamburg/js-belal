@@ -922,7 +922,7 @@ nav{
        display: none;
       }   
       nav>ul a{
-        padding: 20px;
+        padding: 0px;
         position: relative;
       }
       .text4{
@@ -942,11 +942,11 @@ nav{
    }
         .navActive {
           opacity: 1;
-           left: 80%;
+           left: 79%;
          position: absolute;
          transition: .5s ease-in-out; 
         
-         padding: 10px;
+         padding: 0px;
        
          z-index: 300;
          display: block;

@@ -154,7 +154,7 @@ z-index: 10px;
     height: 100px;
     
     position: absolute;
-  top: 580px;
+  top: 550px;
     transform: translateX(-80%);
     transition: 1s ease-in-out;
 }

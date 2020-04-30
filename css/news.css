@@ -158,7 +158,7 @@ top: 20px;
 z-index: 10px;
 }
 /* &&&&&&&&&&&&&& */
-@media screen and (max-width:1000px){
+@media screen and (max-width:1050px){
   
   #res{
     width: 100%;
@@ -203,7 +203,7 @@ z-index: 10px;
 @media screen and (max-width:500px){
   body{
     position: sticky;
-    width: 100%;
+    width: 80%;
     background-color: slategray;
     padding: 0;
     margin: 0;
@@ -214,7 +214,7 @@ position: sticky;
 }
 .contNew{
 position: sticky;
-  width: 100%;
+  width: 80%;
 }
 .imgNews{
   width: 50%;
@@ -224,15 +224,15 @@ position: sticky;
   left: 30%;
 }
 .navNews{
-  width: 500px;
+  width: 20px;
   
-  top: 100px;
+  top: 80px;
   display: grid;
 }
 .navNews>ul{
 
   display: grid;
-  grid-template-columns:1fr 1fr ;
+  grid-template-columns:1fr  ;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -243,7 +243,7 @@ position: sticky;
 }
 .navNews>ul>li{
  width: 180px;
-  font-size: 22px;
+  font-size: 20px;
   background-color:rgba(6, 57, 88, 0.767);
 padding: 5px;
 }
@@ -270,7 +270,7 @@ padding: 5px;
      display: none;
     }   
     nav>ul a{
-      padding: 20px;
+      padding: 0px;
       position: relative;
     }
    #burger{
@@ -281,7 +281,7 @@ padding: 5px;
          .navActive {
           
           opacity: 1;
-          left: 10%;
+          left: 5%;
          position: absolute;
          top: 50px;
          display: block;
