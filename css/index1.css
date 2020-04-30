@@ -909,7 +909,7 @@ nav{
  
 }
      nav>ul{
-      width: 20%;
+      width: 29%;
         top: 1PX;
      left: 100%;
          height: 50vh;
@@ -922,7 +922,7 @@ nav{
        display: none;
       }   
       nav>ul a{
-        padding: 0px;
+        padding: 20px;
         position: relative;
       }
       .text4{
@@ -942,7 +942,7 @@ nav{
    }
         .navActive {
           opacity: 1;
-           left: 79%;
+           left: 75%;
          position: absolute;
          transition: .5s ease-in-out; 
         

@@ -203,7 +203,7 @@ z-index: 10px;
 @media screen and (max-width:500px){
   body{
     position: sticky;
-    width: 80%;
+    width: 100%;
     background-color: slategray;
     padding: 0;
     margin: 0;
@@ -214,7 +214,7 @@ position: sticky;
 }
 .contNew{
 position: sticky;
-  width: 80%;
+  width: 100%;
 }
 .imgNews{
   width: 50%;
@@ -242,10 +242,10 @@ position: sticky;
   
 }
 .navNews>ul>li{
- width: 180px;
+ width: 150px;
   font-size: 20px;
   background-color:rgba(6, 57, 88, 0.767);
-padding: 5px;
+padding: px;
 }
 .contNew{
 
@@ -289,9 +289,10 @@ padding: 5px;
         #res{
           display: grid;
           grid-template-columns:1fr  ;
-        padding: 50px;
-          grid-gap: 20px;
+        padding: 10%;
+          grid-gap: 0px;
           perspective: 800px; 
+         
         }
         .mystyle {
         display: grid;
