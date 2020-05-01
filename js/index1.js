@@ -140,12 +140,7 @@ function sub1() {
 
 }
 sub1()
-//   /////  imgCont   /////////   /////
-// let im1 = document.querySelectorAll('.f')
 
-// let img1 = document.querySelector('.img1')
-// let txt1 = document.querySelector('.txt1')
-// let close = document.querySelector('.close')
 //////////////////////////////////////////////////////////////////////////////////////////
 const section = document.querySelectorAll(".section");
 // const locationImage = {
