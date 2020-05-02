@@ -312,34 +312,8 @@ label {
 padding-top:12px ;
       border-radius: 50%;
   } */
-  @media screen and (max-width:1200px){
-
-    #abCont{
-      width: 100%;
-      height: 200vh;
-      overflow: hidden;
-      display: flex;
-      position: relative;
-  }
-  #contAbaut{
-    width: 100%;
-    height: 150vh;
-   
-    overflow: hidden;
-    
-    display: flex;
-    
-    }
-    #imgabut{
-      width: 30%;
-      top: 710px;
-      display: flex;
-      justify-content: center;
-  }
-  }
-
-
   @media screen and (max-width:1100px){
+
     #abCont{
       width: 100%;
       height: 100vh;
@@ -356,51 +330,40 @@ padding-top:12px ;
     display: flex;
     
     }
-    .comimg{
-      display: none;
-    }
-
-.textAb{ 
-  width: 35%;
-  position: absolute;
-  margin: 10px;
-  font-size: 18px;
-  
-}
-
-.icon-bar{
-  width: 100%;
- left:42%;
-bottom: 70px;
-display: flex;
-position: inherit;
-justify-content: space-around;
- align-items: center;
- margin-left: 20px;
-}
-.icon-bar a {
-padding: 10px; 
-
-
-}
-#imgabut{
-  width: 30%;
-top: 720px;
-  display: flex;
-  justify-content: center;
-}
-#name h4{
-  padding: 10px;
-    font-size: 20px;
-    color: ivory;
-    
-}
-.comimg{
-  display: none;
-}
-
+    #imgabut{
+      width: 30%;
+      top: 710px;
+      display: flex;
+      justify-content: center;
   }
-@media screen and (max-width:850px){
+  input,textarea{  
+   
+    background-color: rgb(75, 102, 124);
+      border:none;
+      padding-left: 5px;
+      color: ivory;
+   position: relative;
+      border-bottom: 2px solid rgb(243, 243, 245);
+  }
+  .icon-bar{
+    width: 100%;
+   left:42%;
+  bottom: 120px;
+  display: flex;
+  position: inherit;
+  justify-content: space-around;
+   align-items: center;
+   margin-left: 20px;
+  }
+  .comimg{
+   display: none;
+    
+  }
+  }
+
+
+  
+@media screen and (max-width:800px){
     body{
         background-color: slategray;
         padding: 0;
@@ -428,8 +391,9 @@ top: 720px;
     }
     #imgabut{
       width: 30%;
-      top: 350px;
+      top: 390px;
       display: flex;
+      right:39%;
       justify-content: center;
   }
   .textAb{
@@ -454,13 +418,14 @@ top: 720px;
     position: absolute;
       
      }
-    input,textarea{
-    width:100%;
-    font-weight: bold; 
-    padding: 15px 90px;
+     input,textarea{  
+   
+      background-color: rgb(75, 102, 124);
+        border:none;
+        padding-left: 5px;
+        color: ivory;
      
-    
-  }
+    }
 
     #left{
     display: none;
@@ -515,7 +480,7 @@ top: 720px;
     }
     .icon-bar{
       width: 100%;
-     left: 0%; bottom: 100px;
+     left: 18%; bottom: 80px;
     display: flex;
  position: inherit;
   justify-content: space-around;
@@ -535,7 +500,7 @@ top: 720px;
 @media screen and (max-width:650px){ 
   #contAbaut{
     width: 100%;
-    height: 140vh;
+    height: 160%;
     position: absolute;
     overflow: hidden;
     
@@ -546,22 +511,40 @@ top: 720px;
     width:100%;
     position: sticky;
     display: flex;
-    top: 560px;
+    top: 500px;
     justify-content: center;
     text-align: center;
     } 
     #imgabut{
       width: 30%;
-      top: 400px;
+      top: 360px;
       display: flex;
       justify-content: center;
   }
   .textAb .p ,.p1{
-  
-    line-height: 40px;
+    line-height: 30px;
     letter-spacing:0px ;
-    color: rgb(253, 250, 245);
-   
-    
+    color: rgb(253, 250, 245);    
 }
+.icon-bar a {
+
+  border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: white;
+    margin: 10px;
+    font-size:40px;
+    transition:1s ease-in-out;
+  }
+  input,textarea{  
+   
+    background-color: rgb(75, 102, 124);
+      border:none;
+      padding-left: 5px;
+      color: ivory;
+   position: relative;
+      border-bottom: 2px solid rgb(243, 243, 245);
+  }
+
 }
