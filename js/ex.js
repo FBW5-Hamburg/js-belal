@@ -1,12 +1,16 @@
 window.onload = function(){
-    nachrecht()
+   // nachrecht()
     getData(arr)
     navAbaut()
  }
 let arr =''
 function getData(arr){
     cat1 =arr
-    fetch("https://newsapi.org/v2/everything?q=hamburg&sources&apiKey=901399a7a26d409b9e62a188e0d974ab", {
+    fetch('http://newsapi.org/v2/everything?' +
+    'q=hamburg&' +
+    'from=2020-05-03&' +
+    
+    'apiKey=901399a7a26d409b9e62a188e0d974ab', {
     "method": "GET",
    
 })
@@ -75,65 +79,65 @@ function getData(arr){
 });
 
 }
-function nachrecht() {
+// function nachrecht() {
     
 
-let nachrecht = document.getElementById('nachrecht');
-  let url2 = './js/newsHam1.json';
-  fetch(url2)
-  .then(response  => response.json())
-  .then(data => {      
+// let nachrecht = document.getElementById('nachrecht');
+//   let url2 = './js/newsHam1.json';
+//   fetch(url2)
+//   .then(response  => response.json())
+//   .then(data => {      
       
-      //output.textContent   =  data;
-     console.log(data.channel.item);
-      data.channel.item.map(item=>{
-          console.log(item)
-           let ul = document.createElement("ul");
-           ul.style.listStyleType='none'
-          let title = document.createElement("li");
-          let category = document.createElement("li");
-           let description = document.createElement("li");
-           let imgLi = document.createElement("li");
-           let img = document.createElement("img");
-           let homepage = document.createElement("li");
-          let link ;
-           let pubDate = document.createElement("li");
-          // let teilmhem = document.createElement("li");
-          // let notversorgung =document.createElement('li')
+//       //output.textContent   =  data;
+//      console.log(data.channel.item);
+//       data.channel.item.map(item=>{
+//           console.log(item)
+//            let ul = document.createElement("ul");
+//            ul.style.listStyleType='none'
+//           let title = document.createElement("li");
+//           let category = document.createElement("li");
+//            let description = document.createElement("li");
+//            let imgLi = document.createElement("li");
+//            let img = document.createElement("img");
+//            let homepage = document.createElement("li");
+//           let link ;
+//            let pubDate = document.createElement("li");
+//           // let teilmhem = document.createElement("li");
+//           // let notversorgung =document.createElement('li')
           
-           title.textContent=item.title;
-           title.classList.add('titl')
-           img.src=item.enclosure['@url'];
-           img.classList.add('mm')
-           imgLi.appendChild(img);
-           console.log(img);
+//            title.textContent=item.title;
+//            title.classList.add('titl')
+//            img.src=item.enclosure['@url'];
+//            img.classList.add('mm')
+//            imgLi.appendChild(img);
+//            console.log(img);
            
-           category.textContent=item.category;
-           description.textContent=item.description;
-           link=item.link;
-          homepage.innerHTML=`<a href='${link}' target="_blank" > homepage </a>` ; 
-          pubDate.textContent=item.pubDate;
-          // teilmhem.textContent='geburtsklinik' + ': ' +item.krankenhaeuser_hh.teilnahme_geburtsklinik;
-          // notversorgung.textContent='geburtsklinik' + ': ' +item.krankenhaeuser_hh.teilnahme_notversorgung
-          ul.appendChild(title);
-          ul.appendChild(imgLi);
+//            category.textContent=item.category;
+//            description.textContent=item.description;
+//            link=item.link;
+//           homepage.innerHTML=`<a href='${link}' target="_blank" > homepage </a>` ; 
+//           pubDate.textContent=item.pubDate;
+//           // teilmhem.textContent='geburtsklinik' + ': ' +item.krankenhaeuser_hh.teilnahme_geburtsklinik;
+//           // notversorgung.textContent='geburtsklinik' + ': ' +item.krankenhaeuser_hh.teilnahme_notversorgung
+//           ul.appendChild(title);
+//           ul.appendChild(imgLi);
 
          
-           ul.appendChild(category);
-           ul.appendChild(description);
-          ul.appendChild(homepage);
-          ul.appendChild(pubDate)
-          // ul.appendChild(teilmhem)
-          // ul.appendChild(notversorgung)
-          ul.classList.add('mystyle')
+//            ul.appendChild(category);
+//            ul.appendChild(description);
+//           ul.appendChild(homepage);
+//           ul.appendChild(pubDate)
+//           // ul.appendChild(teilmhem)
+//           // ul.appendChild(notversorgung)
+//           ul.classList.add('mystyle')
           
-          nachrecht.appendChild(ul)
+//           nachrecht.appendChild(ul)
           
-      })
+//       })
      
       
-  });
-}
+//   });
+//}
 function navAbaut() {
     let burger=document.querySelector('#burger')
     let navAbaut =document.querySelector('nav>ul')
