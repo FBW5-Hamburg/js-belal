@@ -717,7 +717,7 @@ position: relative;
 #burger{
   width: 50px;
   position: fixed;
-  right: 26px;
+  right: 1px;
   font-weight: bold;
   top: 20px;
  display: none;
@@ -725,17 +725,17 @@ position: relative;
 cursor: pointer;
 
 }
-#burger div{
+ #burger div{
  
 width: 25px ;
 height: 5px;
 background-color: papayawhip;
 margin: 5px;
-right: 20px;
-
+right: 15px;
+position: relative;
 
 z-index: 10px;
-}
+} 
 
 /* &&&&&&&&&&&&&&&//////////////// */
 @media only screen and (max-width:1025px){
@@ -897,7 +897,7 @@ body{
 }
 #img{
   position: absolute;
-  left: 29%;
+  left: 28%;
   top: 13px;
 }
 h1{ 
@@ -933,27 +933,49 @@ width: 90%;
 height: 250px;
 position: relative;
 }
+#tenperatur{
+  margin: 5px 270px;
+  top: -40px;
+}
+.temp{
+  margin:40px 220px;
+  position: absolute;
+  display: flex;
+  top: 0px;
+  color: floralwhite;
+  z-index: +1;
+}
+#clock{
+  
+  margin: 10px 10px;
+ z-index: 10;
+
+}
 
 nav{
   background-color:rgba(6, 57, 88, 0.932);
   height: 80px;
   transition: 1ss ease-in-out;   
- 
+ position: absolute;
+
 }
 nav>ul{
   width: 29%;  
   left: 100%;
-  height: 30vh;
-  position: relative;    
+  height: 40vh;
+  position: absolute;   
   display: flex;
   flex-direction: column;
   align-items: center;
   transition:1s ease-in-out;   
   display: none;
+  top: 70px;
+  
   }   
     nav>ul li{
     position: relative;
     padding: 5px;
+    
     }
     
     #burger{
@@ -970,14 +992,12 @@ nav>ul{
       display: block;
       top: 79px;
       }   
-      .slid{
-        transform: scale(1);
-      }  
+     
 /* ////1111-22222 */
         
 #imeges{
   display: grid;
-  grid-template-rows: 650px 1400px 890px 820px 650px 420px;
+  grid-template-rows: 720px 1400px 890px 820px 650px 420px;
   padding: 0;         
 }
      

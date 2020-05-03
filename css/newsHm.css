@@ -1,32 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
  .contNachrecht{
+
      display: grid;
-     grid-template-columns: 40% 40%;
+     grid-template-columns: 1fr 1fr ;
      gap: 50px;
-     padding: 50px;
+     padding: 80px;
      justify-content: center;
+  
  }
  #res1{
     display: grid;
     grid-template-columns: 1fr  ;
-    height:1000vh;
+ 
     grid-gap: 50px;
     perspective: 800px;
-  
+ 
     padding: 20px;
 
     
 } 
 #res1>ul{
     display: grid;
+
     background-color:rgba(6, 57, 88, 0.932);
   color:white;
     box-shadow: 7px 10px 5px rgba(6, 57, 88, 0.664),-5px -5px  rgba(3, 54, 85, 0.534);
-    height: 80vh;
+  
      list-style-type: none; 
     padding: 20px;
     font-size: 19px;
     line-height: 25px;
     transition: all 0.5s;
+   
 }
 .mm{
   width: 90%;
@@ -73,7 +84,7 @@
   color: rgba(248, 2, 137, 0.993);
 }
 
-#burger{
+/* #burger{
   width: 50px;
   position: fixed;
   right: 24px;
@@ -94,16 +105,53 @@ right: 10px;
 top: 20px;
 
 z-index: 10px;
-}
+} */
 
 /* &&&&&&&&&&& */
 
 @media only screen and (max-width:850px){
+  body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 .contNachrecht{
+  width: 100%;
+  position: relative;
   grid-template-columns:100%;
+  padding: 0px;
+  margin: 0px;
+}
+#res1{
+
+  display: grid;
+  grid-template-columns:1fr  ;
+  padding:0;
+  grid-gap: 30px;
 }
 
 
+#nachrecht{
+  display: grid;
+  grid-template-columns: 1fr  ;
 
+  grid-gap: 50px;
+  perspective: 800px;
+width: 100%;
+  padding: 0px;
+  position: relative;
+
+}
+#nachrecht>ul{
+  width: 100%;
+ padding: 20px;
+ position: relative;
+}
+#res1>ul{
+  width: 100%;
+ padding: 0px;
+ position: relative;
+ 
+}
 
 }

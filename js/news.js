@@ -89,8 +89,8 @@ function navAbaut() {
      let burger=document.querySelector('#burger')
      let navAbaut =document.querySelector('nav>ul')
      burger.addEventListener('click',function () {
-          navAbaut.style.display= 'block'; 
-          navAbaut.classList.toggle('navActive')
+         
+           navAbaut.classList.toggle('navActive')
          
          
      })

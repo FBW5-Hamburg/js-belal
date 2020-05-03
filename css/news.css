@@ -2,41 +2,41 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+
 }
 body{
- 
+
   background: linear-gradient(rgba(162, 0, 177, 0.24),rgba(16, 83, 207, 0.336)), url(../imeg/news4.jpg) repeat center/cover;
   background-attachment: fixed;
-  
 
-  
+
+
 }
 .contNew{
 
   display: grid;
   grid-template-rows: 60px 350px auto ;
   grid-gap:  5px ;
- 
+
  padding: 5px;
 
 }
 
-.nav{
+ .nav{
 display: grid;
 
 
-}
+} 
 
 
 .navNews{
- 
+
      top: 0px;
 
-   
+
 }
 .navNews>ul{
-  
+
   list-style-type: none;
   margin: 50px;
   padding: 0;
@@ -44,7 +44,7 @@ display: grid;
   display: flex;
   justify-content: center;
   position: relative;
-  
+
 }
 .navNews>ul>li{
  width: 10%;
@@ -64,7 +64,7 @@ display: grid;
   box-shadow: 7px 8px 5px rgba(3, 87, 212, 0.699);
   transform: scale(1.2);
   transform: perspective(500);
-  transform-origin: 50px 20px; 
+  transform-origin: 50px 20px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 .navNews>ul>li:hover>a{
@@ -94,17 +94,17 @@ display: grid;
 color:white;
   box-shadow: 7px 10px 5px rgba(6, 57, 88, 0.664),-5px -5px  rgba(3, 54, 85, 0.534);
 
-   list-style-type: none; 
+   list-style-type: none;
  padding: 20px;
   font-size: 19px;
   line-height: 25px;
   transition: all 0.5s;
-  
+
 }
 .mystyle:hover{
   transform: scale(1.1);
   transform: perspective(500);
- 
+
   background-blend-mode:multiply ;
   transition: all 0.5s;
 }
@@ -115,13 +115,13 @@ color:white;
 .imNew{
   width: 90%;
   height: 40vh;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   padding: 20px;
-  
+
 }
 
 .mar{
@@ -130,10 +130,10 @@ color:white;
   position: relative;
   width: 100%;
   height: 20px;
- 
-  
+
+
 }
-#burger{
+/* #burger{
   width: 50px;
   position: fixed;
   right: 24px;
@@ -143,9 +143,9 @@ color:white;
 
 cursor: pointer;
 
-}
-#burger div{
- 
+} */
+/* #burger div{
+
 width: 25px ;
 height: 5px;
 background-color: papayawhip;
@@ -154,10 +154,10 @@ right: 10px;
 top: 20px;
 
 z-index: 10px;
-}
+} */
 /* &&&&&&&&&&&&&& */
 @media screen and (max-width:1050px){
-  
+
   #res{
     display: grid;
     grid-template-columns:1fr 1fr ;
@@ -166,8 +166,8 @@ z-index: 10px;
   }
 }
 @media screen and (max-width:769px){
-  
-  #res{ 
+
+  #res{
     display: grid;
     grid-template-columns:1fr;
     padding: 50px;
@@ -203,12 +203,12 @@ z-index: 10px;
   display: grid;
   grid-template-rows: 60px 265px auto ;
   grid-gap:  2px ;
- 
+
  padding: 2px;
 }
-.nav{
- position: sticky;
-}
+ /* .nav{
+ position: relative;
+}  */
 #img{
   position: relative;
   left: 0%;
@@ -229,51 +229,62 @@ z-index: 10px;
   background-color:rgba(6, 57, 88, 0.767);
   margin: 5px;
 }
-nav>ul{
+/* nav>ul{
   width: 20%;
   top: 1PX;
   left: 100%;
   height: 50vh;
-  position: relative;   
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: .5s ease-in-out;   
+  transition: .5s ease-in-out;
   display: none;
-}   
+}
 nav>ul a{
   padding: 0px;
   position: relative;
 }
 #burger{
-  z-index: 1; 
+  z-index: 1;
   position: fixed;
   display: block;
-}
-.navActive {         
+}*/
+/* .navActive {
   opacity: 1;
   left: 5%;
-  position: absolute;
-  top: 50px;
+  position: fixed;
+  top: 0px;
   display: block;
-} 
+}   */
  #res{
   display: grid;
   grid-template-columns:1fr  ;
   padding: 1%;
-  grid-gap: 30px;  
+  grid-gap: 30px;
 }
 .mystyle {
-  display: grid;    
+  display: grid;
   background-color:rgba(6, 57, 88, 0.932);
   color:white;
   box-shadow: 7px 10px 5px rgba(6, 57, 88, 0.664),-5px -5px  rgba(3, 54, 85, 0.534);
   margin: auto;
-  list-style-type: none; 
+  list-style-type: none;
   padding: 20px;
   font-size: 22px;
   line-height: 25px;
-  transition: all 0.5s;       
+  transition: all 0.5s;
+}
+.imNew{
+  width: 100%;
+  height: 40vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px;
+
 }
 
 
